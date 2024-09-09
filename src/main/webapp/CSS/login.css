@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+body {
+	text-align: center;
+	height: 90vh;
+	background-image: url("https://img.freepik.com/premium-photo/real-estate-agent-home-sales-broker-is-using-pen-pointing-house-model-explains-business-contract-rent-buy-mortgage-loan-home-insurance_265022-98012.jpg?uid=R114393062&ga=GA1.1.1345750513.1721225644&semt=ais_hybrid");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Arial, sans-serif;
+}
+
+form {
+	border: 2px solid black;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 500px;
+	text-align: left;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+h1 {
+	padding: 40px;
+	margin-left: 110px;
+	text-decoration: underline;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+td {
+	padding: 10px;
+	vertical-align: middle;
+}
+
+td:first-child {
+	text-align: right;
+	padding-right: 15px;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"],
+	select {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-sizing: border-box; 
+}
+
+input[type="submit"] {
+	background-color: teal;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-left: 45%;
+	transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+	background-color: white;
+	color: black;
+}
+a.t{
+	margin-left:40%;
+	font-size: 16px;
+}
+a.button {
+   
+    font-size: 16px;
+    margin-left:45%;
+    text-decoration:none;
+    color:white;
+    cursor:pointer;
+    transition: color 0.3s ease;
+}
+
+a.button:hover {
+    color:highlight;
+}
+.message {
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+@media (max-width: 600px) {
+    body {
+        height: auto; 
+        padding:10px;
+    }
+
+    form {
+        width: 100%;
+        padding: 15px;
+        max-width: 100%;
+        height: auto; 
+    }
+
+    h1 {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    table {
+        width: 100%;
+        border: none; 
+    }
+
+    td {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    td:first-child {
+        text-align: left;
+        padding-right: 0;
+    }
+
+    input[type="submit"] {
+        margin: 10px 0; 
+    }
+
+    a.button {
+        margin: 10px 0; 
+        display: block; 
+    }
+}

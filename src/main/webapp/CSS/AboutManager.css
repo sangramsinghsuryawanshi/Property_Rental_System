@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+/* General Styles */
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #ffe7b9;
+}
+
+/* About Container */
+.about-container {
+	max-width: 1200px;
+	margin: 20px auto;
+	margin-top: 7%;
+	padding: 20px;
+	background: linear-gradient(145deg, #ffffff, #eaeaea);
+	/* Gradient background */
+	border-radius: 15px;
+	border: 1px solid silver;
+	box-shadow: 5px 10px 20px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+/* Flexbox for layout */
+.about-content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+/* Responsive flex items */
+@media ( min-width : 768px) {
+	.about-content {
+		flex-direction: row; /* Side-by-side layout on larger screens */
+		align-items: flex-start;
+	}
+}
+
+.about-image {
+	flex: 1;
+	display: flex;
+	justify-content: center; /* Center image horizontally */
+	align-items: center; /* Center image vertically */
+	max-width: 100%; /* Ensure image does not overflow */
+}
+
+.about-image img {
+	max-width: 100%;
+	height: auto; /* Maintain aspect ratio */
+	border-radius: 15px; /* Rounded corners for the image */
+	border: 1px solid silver;
+	box-shadow: 5px 10px 20px;
+	margin-top: 20%;
+}
+
+/* Text section */
+.about-info {
+	flex: 2;
+}
+
+.about-info h1 {
+	margin: 0;
+	color: #333;
+	font-size: 3rem;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.about-info p {
+	margin: 10px 0;
+	line-height: 1.6; /* Improved readability with line height */
+}
+
+.about-info h2 {
+	margin-top: 20px;
+	color: #555; /* Slightly lighter color for secondary headers */
+	font-size: 1.5rem; /* Medium font size for sub-headers */
+}
+
+.about-info p strong {
+	color: #007bff; /* Accent color for emphasis */
+}
+
+/* Responsive Adjustments */
+@media ( max-width : 767px) {
+	.about-container {
+		padding: 15px; /* Reduce padding on small screens */
+	}
+	.about-info h1 {
+		font-size: 1.5rem; /* Smaller font size for headers */
+	}
+	.about-info h2 {
+		font-size: 1.25rem; /* Smaller font size for sub-headers */
+	}
+}
+
+@media ( max-width : 480px) {
+	.about-info h1 {
+		font-size: 1.25rem; /* Further reduce font size */
+	}
+	.about-info h2 {
+		font-size: 1rem; /* Further reduce font size */
+	}
+}

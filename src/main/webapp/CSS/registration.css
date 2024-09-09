@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+body {
+	text-align: center;
+	height: 100%;
+	background-image:
+		url("https://img.freepik.com/premium-photo/real-estate-agent-home-sales-broker-is-using-pen-pointing-house-model-explains-business-contract-rent-buy-mortgage-loan-home-insurance_265022-98012.jpg?uid=R114393062&ga=GA1.1.1345750513.1721225644&semt=ais_hybrid");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: Arial, sans-serif;
+	margin: 1;
+}
+
+form {
+	border: 2px solid black;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 10px 14px 28px rgba(0, 0, 0, 0.4);
+	width: 100%;
+	max-width: 500px;
+	text-align: left;
+	box-sizing: border-box;
+}
+
+h1 {
+	margin: 0 0 20px 0;
+	padding: 10px;
+	text-decoration: underline;
+	font-size: 1.8em;
+	margin-left: 20%;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+td {
+	padding: 8px;
+	vertical-align: middle;
+}
+
+td:first-child {
+	text-align: right;
+	padding-right: 10px;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"],
+	select {
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type="file"] {
+	margin-top: 8px;
+	margin-bottom: 15px;
+}
+
+input[type="checkbox"] {
+	margin-left: 28%;
+}
+
+input[type="submit"] {
+	background-color: teal;
+	color: white;
+	padding: 8px 16px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	transition: background-color 0.3s ease;
+	margin-left: 45%;
+}
+
+input[type="submit"]:hover {
+	background-color: white;
+	color: black;
+}
+
+a.button {
+	font-size: 14px;
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+	transition: color 0.3s ease, text-decoration 0.2s ease;
+	margin-left: 50%;
+}
+
+a.button:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+
+
+@media ( max-width : 768px) {
+	body {
+		padding: 10px;
+	}
+	form {
+		padding: 15px;
+		max-width: 100%;
+	}
+	h1 {
+		font-size: 1.4em;
+		padding: 5px;
+	}
+	table {
+		width: 100%;
+	}
+	td {
+		display: block;
+		width: 100%;
+		padding: 8px 0;
+	}
+	td:first-child {
+		text-align: left;
+		padding-right: 0;
+	}
+	input[type="submit"] {
+		width: auto;
+		margin-left: auto;
+	}
+	a.button {
+		margin: 10px 0;
+		display: block;
+		margin-left: auto;
+	}
+}
+
+@media ( max-width : 480px) {
+	h1 {
+		font-size: 1.2em;
+		padding: 5px;
+	}
+	input[type="submit"] {
+		font-size: 12px;
+		padding: 6px 12px;
+		width: 100%;
+	}
+	a.button {
+		font-size: 12px;
+	}
+}

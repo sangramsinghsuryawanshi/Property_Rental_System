@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+/* General Styles */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f9;
+	color: #333;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+/* Headings */
+p {
+	color: #2c3e50;
+	margin-bottom: 20px;
+	font-size: 1em;
+}
+
+h1 {
+	text-align: center;
+	color: #2c3e50;
+	margin-bottom: 20px;
+	font-size: 2.5em; 
+	font-weight: bold;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Request Container */
+.request {
+	background: #ffffff;
+	border-radius: 12px;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+	margin: 20px auto;
+	padding: 10px;
+	width: 90%;
+	max-width: 1200px; 
+	border: 2px solid #f39c12;
+	gap: 20px;
+	display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+/* Form Styling */
+form {
+	background: #f9f9f9;
+	border-radius: 8px;
+	box-shadow: 10px 16px 12px rgba(0, 0, 0, 0.3);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px; 
+}
+
+/* Form Group */
+.form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+input[type="email"], input[type="text"], textarea {
+	width: 90%;
+	padding: 12px;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+	border-radius: 6px; /* Increased border-radius for inputs */
+	font-size: 1em;
+	transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus, input[type="text"]:focus, textarea:focus {
+	border-color: #f39c12; /* Highlight border on focus */
+}
+
+textarea {
+	height: 120px; /* Increased height */
+	resize: vertical;
+}
+
+/* Buttons */
+button {
+	padding: 12px 24px;
+	border: none;
+	border-radius: 8px;
+	font-size: 1em;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s
+		ease;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
+
+button:hover {
+	transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+.approve-button {
+	background-color: #2ecc71; /* Green background */
+	color: white;
+}
+
+.approve-button:hover {
+	background-color: #27ae60;
+}
+
+.delete-button {
+	background-color: #e74c3c;
+	margin-top:20px;
+	color: white;
+	width: 90%;
+}
+
+.delete-button:hover {
+	background-color: #c0392b;
+}
+
+.message {
+	padding: 12px;
+	border-radius: 6px;
+	margin-bottom: 20px;
+	font-size: 1rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow */
+	text-align: center;
+	color: #333;
+	background-color: #fff;
+}
+
+.message.success {
+	background-color: #d4edda;
+	color: #155724;
+	border: 1px solid #c3e6cb;
+}
+
+.message.error {
+	background-color: #f8d7da;
+	color: #721c24;
+	border: 1px solid #f5c6cb;
+}
+.search-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-input {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 4px;
+    border: 1px solid orange;
+    font-size: 1rem;
+    box-shadow: 10px 12px 14px rgba(0, 0, 0, 0.4);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #00ffff;
+    outline: none;
+    box-shadow: 10px 14px 16px rgba(0, 0, 0, 0.4);
+}
+/* Responsive Design */
+@media ( max-width : 768px) {
+	.request {
+		padding: 15px;
+		grid-template-columns: 1fr; 
+	}
+	form {
+		padding: 15px;
+	}
+	.search-input {
+        max-width: 90%;
+        font-size: 0.9rem;
+    }
+}
+
+@media ( max-width : 480px) {
+	h1 {
+		font-size: 1.8em; 
+	}
+	.request {
+		margin: 10px;
+		padding: 10px;
+	}
+	button {
+		padding: 10px;
+		font-size: 0.9em;
+	}
+	}
+	 .search-input {
+        font-size: 0.8rem;
+        padding: 8px;
+    }

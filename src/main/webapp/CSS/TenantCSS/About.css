@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+/* General container styling */
+.about-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* About Us section */
+.about-us {
+	background-image:
+		url("https://static.vecteezy.com/system/resources/thumbnails/027/717/341/small_2x/successful-real-estate-transaction-realtor-and-buyer-shaking-hands-generative-ai-photo.jpg");
+	/* Replace with the correct path to your image */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 100px;
+	border-radius: 8px;
+	box-shadow: 10px 14px 18px rgba(0, 0, 0, 0.1);
+	color: white;
+	text-align: center;
+	width: 80%;
+	margin-bottom: 10%;
+}
+
+.about-us h1 {
+	font-size: 3rem;
+	margin-bottom: 15px;
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-us p {
+	font-size: 1.1rem;
+	line-height: 1.6;
+	color: white;
+	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form, .feedback-form {
+	background-color: #ffffff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 10px 14px 18px rgba(0, 0, 0, 0.6);
+	width: 90%;
+	margin-bottom: 20px;
+	border: 2px solid #007bff;
+	margin-top: 20px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	margin-left: 20px;
+}
+
+.contact-form h2, .feedback-form h2 {
+	font-size: 2rem;
+	margin-bottom: 15px;
+	color: #007bff;
+	font-weight: 600;
+}
+
+.contact-form label, .feedback-form label {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 1rem;
+	color: #333;
+}
+
+.contact-form input, .feedback-form input, .contact-form textarea,
+	.feedback-form textarea, .contact-form select, .feedback-form select {
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 15px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 1rem;
+	box-sizing: border-box;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus, .feedback-form input:focus, 
+.contact-form textarea:focus, .feedback-form textarea:focus, 
+.contact-form select:focus, .feedback-form select:focus {
+	border-color: #007bff;
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+	outline: none;
+}
+
+.contact-form button, .feedback-form button {
+	background-color: #007bff;
+	color: white;
+	padding: 14px 22px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1rem;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover, .feedback-form button:hover {
+	background-color: #0056b3;
+	transform: scale(1.05);
+}
+
+.contact-form button:active, .feedback-form button:active {
+	background-color: #004494;
+	transform: scale(1);
+}
+
+
+/* Table styling */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 10px 0;
+}
+
+td {
+	padding: 10px;
+	vertical-align: top;
+}
+.values {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.value {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.value i {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    margin: 20px 0;
+}
+
+.testimonial {
+    border-left: 4px solid #007bff;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+/* Responsive adjustments */
+@media ( max-width : 768px) {
+	.about-container {
+		padding: 10px;
+	}
+	.about-us {
+		padding: 50px;
+		width: 100%;
+		margin-bottom: 5%;
+	}
+	.about-us h1 {
+		font-size: 2rem;
+	}
+	.contact-form h2, .feedback-form h2 {
+		font-size: 1.5rem;
+	}
+	.contact-form, .feedback-form {
+		margin-left: 0;
+	}
+	table {
+		margin-bottom: 20px;
+	}
+	td {
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	td:not(:last-child) {
+		margin-bottom: 10px;
+	}
+}
+
+@media ( max-width : 480px) {
+	.about-us {
+		padding: 30px;
+	}
+	.about-us h1 {
+		font-size: 1.5rem;
+	}
+	.contact-form h2, .feedback-form h2 {
+		font-size: 1.2rem;
+	}
+}

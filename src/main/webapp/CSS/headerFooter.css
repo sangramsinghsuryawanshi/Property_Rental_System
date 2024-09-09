@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+body, ul, li, a {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	line-height: 1.6;
+	font-family: sans-serif;
+	background-color: #ffffff;
+	color: #333;
+}
+
+/* Header Styling */
+header {
+	background-color: #cfaa5c;
+	color: #fff;
+	padding: 15px 0;
+	border-radius: 15px 15px 0 0;
+	position: relative;
+	margin-top: 15px;
+}
+
+header .container2 {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo {
+	font-size: 2em;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+}
+
+header nav {
+	display: flex;
+	align-items: center;
+}
+
+/* Menu Styling */
+header .menu {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	transition: transform 0.3s ease;
+}
+
+/* Hide menu items on small screens */
+header .menu li {
+	margin-left: 20px;
+}
+
+header .menu a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.2em;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+header .menu a:hover {
+	color: #000000;
+}
+
+/* Toggle menu button */
+header .toggle-menu {
+	display: none;
+	cursor: pointer;
+	font-size: 2em;
+	color: #fff;
+}
+
+/* Responsive Design */
+@media ( max-width : 768px) {
+	header .menu {
+		display: none; /* Hide the menu by default */
+		flex-direction: column;
+		width: 100%;
+		position: absolute;
+		top: 60px; /* Adjust if needed */
+		left: 0;
+		background-color: #cfaa5c;
+	}
+	header .menu.active {
+		display: flex; /* Show the menu when active */
+	}
+	header .menu li {
+		margin: 10px 0;
+		text-align: center;
+	}
+	header .toggle-menu {
+		display: block; /* Show the toggle button on small screens */
+	}
+}

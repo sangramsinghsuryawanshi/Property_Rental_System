@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/* General container styling */
+.form-container {
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f8f9fa;
+	border-radius: 8px;
+	box-shadow: 10px 14px 18px rgba(0, 0, 0, 0.4);
+	text-align: left; /* Adjusted to align text properly */
+	margin-top: 5%;
+	border: 1px solid #ddd; /* Slightly lighter border color */
+}
+
+/* Table styling */
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table td {
+	padding: 10px;
+	text-align: left;
+}
+
+table td label {
+	font-weight: bold;
+	color: #333;
+}
+
+table td input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 1rem;
+	box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.submit-row {
+	text-align: center;
+}
+
+button {
+	background-color: #007bff;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 1rem;
+	transition: background-color 0.3s ease;
+	width: 100%;
+}
+
+button:hover {
+	background-color: #0056b3; /* Adjusted for better visibility */
+}
+
+/* Responsive adjustments */
+@media ( max-width : 768px) {
+	.form-container {
+		padding: 15px; 
+	}
+	table td {
+		display: block;
+		width: 95%;
+		margin-bottom: 15px; 
+	}
+	table td label, table td input {
+		width: 100%; /* Full width for smaller screens */
+	}
+	.message {
+		font-size: 0.9rem;
+		padding: 8px;
+	}
+	.submit-row {
+		text-align: center;
+	}
+}
+
+@media ( max-width : 480px) {
+	.form-container {
+		padding: 10px; 
+	}
+	table td {
+		margin-bottom: 10px; /* Reduce margin for smaller screens */
+	}
+	button {
+		font-size: 0.9rem; /* Slightly smaller button text */
+		padding: 10px 15px; /* Adjust button padding */
+	}
+}
