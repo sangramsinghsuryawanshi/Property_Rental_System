@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
-    justify-content: center; /* Center align items */
+    justify-content: center; 
 }
 
 /* Heading Styling */
@@ -131,7 +131,7 @@
 .search-container {
     margin-bottom: 20px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10%;
 }
 
 #searchInput {

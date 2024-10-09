@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 TenantZone | Designed by SHOA</p>
+            <p>&copy; 2024 TenantZone | Designed by SANGRAMSINGH SURYAWANSHI</p>
         </div>
     </footer>
 </body>

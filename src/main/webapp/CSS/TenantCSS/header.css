@@ -2,79 +2,91 @@
 
 /* Header Styling */
 header {
-    background-color: #3498db;
-    color: white;
-    padding: 10px 0;
-    position: relative;
+	background-color: #3498db;
+	color: white;
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1000;
 }
 
 header .logo {
-    text-align: center;
-    margin-bottom: 10px;
+	text-align: center;
+	margin-bottom: 10px;
 }
 
 header .logo h1 {
-    font-size: 2em;
-    font-weight: bold;
-    text-decoration: underline;
+	font-size: 2em;
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 header nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 header nav ul li {
-    margin: 0 20px;
+	margin: 0 20px;
 }
 
 header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s;
+	color: white;
+	text-decoration: none;
+	font-size: 1.2em;
+	transition: color 0.3s;
 }
 
 header nav ul li a:hover {
-    color: #400040;
+	color: #400040;
 }
 
 header .toggle-menu {
-    display: none;
-    cursor: pointer;
-    font-size: 2em;
-    color: #fff;
-    position: absolute;
-    top: 15px;
-    right: 20px;
+	display: none;
+	cursor: pointer;
+	font-size: 2em;
+	color: #fff;
+	position: absolute;
+	top: 15px;
+	right: 20px;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        text-align: center;
-        display: none;
-        background-color: #3498db;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        z-index: 1000;
-    }
+@media ( max-width : 768px) {
+	header nav ul {
+		flex-direction: column;
+		text-align: center;
+		display: none;
+		background-color: #3498db;
+		width: 100%;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		z-index: 1000;
+	}
+	header nav ul.show {
+		display: flex;
+	}
+	header nav ul li {
+		margin: 10px 0;
+	}
+	header .toggle-menu {
+		display: block;
+	}
+}
 
-    header nav ul.show {
-        display: flex;
-    }
+/* Ensure content starts below the fixed header */
+body {
+	padding-top: 70px; /* Adjust padding to account for header height */
+}
 
-    header nav ul li {
-        margin: 10px 0;
-    }
-
-    header .toggle-menu {
-        display: block;
-    }
+/* Content Styling */
+.content {
+	margin-top: 20px;
+	padding: 20px;
 }
